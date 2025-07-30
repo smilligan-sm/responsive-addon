@@ -59,6 +59,10 @@ body {
   width: 100%;
   aspect-ratio: 16 / 9;
   padding-bottom: 20px;
+  padding-top: 5px;
+}
+.instagram-embed {
+  margin: 30px 0;
 }
 
 section {
@@ -196,6 +200,12 @@ footer a {
   opacity: 0.7;
 }
 
+@media (max-width: 1239px) {
+   .instagram-embed .grid {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 32px;
+  }
+}
 @media (max-width: 960px) {
   header {
     padding: 60px 0;
@@ -213,6 +223,10 @@ footer a {
     font-size: 10px;
   }
   .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+  .instagram-embed .grid {
     grid-template-columns: 1fr;
     grid-gap: 32px;
   }
